@@ -1,0 +1,59 @@
+:root {
+    --snow: snow; /* Define a custom property */
+  }
+
+#body {
+    text-align: center; /* Align the form elements to the center */
+    font-family: monospace, serif;
+    font-size: larger;
+    background-color: rgb(95, 95, 95);
+    color: var(--snow);
+    margin-top: -3em;
+}
+  
+  h1 {
+    font-family: fantasy, serif;
+    font-size: 6rem;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke: 1px;
+    color: var(--snow);
+    border: solid;
+    background-image: url(https://www.kuuloliitto.fi/wp-content/uploads/2023/05/Tyhjat-puhekuplat-340x213.png);
+  }
+  h2{
+    font-family: fantasy, serif;
+    font-size: 4rem;
+    -webkit-text-fill-color: red;
+    -webkit-text-stroke: 1px;
+    color: var(--snow);  
+}
+  
+  .lista1 {
+    text-align: left; /* Align the list items to the center */
+    padding-left: 40%;
+  }
+
+  .lista2 {
+    text-align: left; /* Align the list items to the left */
+    padding-left: 40%; /* Remove default padding */
+  }
+  .toimipiste {
+    text-align: left; /* Align the content to the left */
+    padding-left: 38%;  
+}
+
+  textarea[name="palaute"] {
+    margin-left: -40px; /* Move the textarea to the left */
+}
+
+.palaute{
+margin-left: -2em;
+}
+  
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+  <meta name="viewport" content="width=device-width">
+  <meta charset="utf-8">
+  <meta name="author" content="Joni Laine">
+  <meta name="description" content="Asiakastyytyväisyyskysely">
+  <meta name="keywords" content="HTML, CSS">
+  <link rel="stylesheet" href="kysely.css">
+  <title>Asiakastyytyväisyyskysely</title>
+</head>
+
+<body id="body">
+  <h1>Asiakastyytyväisyyskysely</h1>
+  <h2>Vain vastaamalla voit voittaa!</h2>
+
+  <form>
+    <!-- Your form elements -->
+    <p>
+      Etu- ja sukunimi:<br>
+      <input type="text" size="40" name="kokonimi"><br>
+    </p>
+
+    <p>
+      S-Posti:<br>
+      <input type="text" size="40" name="kokonimi"><br>
+    </p>
+
+    <p>
+      <select name="ikaryhma" size="1">
+        <option selected value="valitse">Valitse oikea vaihtoehto</option>
+        <option value="0-18 vuotta">0-18 vuotta</option>
+        <option value="18-50 vuotta">18-50 vuotta</option>
+        <option value="Yli 50 vuotta">Yli 50 vuotta</option>
+      </select> Ikäryhmä
+    </p>
+
+    <p>
+      Minkä arvosanan annat palvelullemme?<br>
+      <ol class="lista1">
+        <li><label><input type="radio" name="arvosana" value="1"> Täydellinen!</label></li>
+        <li><label><input type="radio" name="arvosana" value="2"> Todella hyvä!</label></li>
+        <li><label><input type="radio" name="arvosana" value="3"> Todella huono!</label></li>
+      </ol>
+    </p>
+
+    <p class="toimipiste">
+      Arvioimasi toimipiste?<br>
+      <ol class="lista2">
+        <li><input type="radio" name="Vantaa" value="ON"><label for="Vantaa">Lohjan toimipiste.</label></li>
+        <li><input type="radio" name="Espoo" value="ON"><label for="Espoo">Espoon toimipiste.</label></li>
+        <li><input type="radio" name="Lohja" value="ON"><label for="Lohja">Vantaan toimipiste.</label></li>
+      </0l>
+    </p>
+
+    <p>
+    
+     <div class="palaute">
+     Vapaamuotoinen palaute palvelustamme:</div><br>
+      <textarea name="palaute" cols="50" rows="5"></textarea>
+    </p>
+
+    <p>
+      <input type="submit" value="Lähetä palaute">
+      <input type="reset" value="Tyhjennä">
+    </p>
+  </form>
+
+  <footer><!--FOOTER MISSING FOR NOW--></footer>
+
+  <div class="Copyrights">
+    Copyright2024 ©Joni Laine
+  </div>
+  
+</body>
+
+</html>
