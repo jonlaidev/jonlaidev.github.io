@@ -1,24 +1,41 @@
+/*erikoisvärin juuri*/
+:root {
+    --special_red:  rgb(222, 69, 69);
+}
+
 body {
     font-family:Arial, Helvetica, sans-serif;
     background-color: rgb(222, 222, 222);
 }
+/*otsikko*/
 h1 {
-    color: rgb(198, 32, 32);
+    color: var(--special_red);
     text-align: center;
-
+    background-color: snow;
+    text-shadow: 2px 2px 2px black;
 }
+/*kokolistan moutoilu tässä*/
 ul {
     list-style-type: circle;
     border: solid;
     font-size: x-large;
     border: solid;
     border-color: snow;
+    background-color: black;
+}
+/*lista muotoilu*/
+.li1, .li2, .li3, .li4 {
+    padding: 0.5em;
+    background-color: grey;
+    color: var(--special_red);
+    text-shadow: 1px 1px 1px snow;
 }
 
-.li1, .li3{
-    color: rgb(198, 32, 32);
-    
+a {
+    text-decoration: none;
+    color: inherit;
 }
-.li2, .li4{
+/*hiiren liikkeeseen reagointi*/
+a:hover {
     color: snow;
 }
