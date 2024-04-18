@@ -1,3 +1,5 @@
 //pop_up_ilmoitus
+let tänään=document.getElementById('päivä')
 let d = new Date();
-document.body.innerHTML = "Tämä päivä on " + d + "?"
+console.log(d)
+tänään.innerHTML = "Tämä päivä on " + d + "?"
