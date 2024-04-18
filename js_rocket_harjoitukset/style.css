@@ -5,3 +5,12 @@ h1 {
     color: red;
     text-align: center;
 }
+.cool {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: backround-color 1s;
+}
+.cool.red{
+    background-color: red;
+}
