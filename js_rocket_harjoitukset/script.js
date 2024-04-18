@@ -11,7 +11,7 @@ var doCoolStuff = function () {
    }
 
    //changing class name
-   document.getElementById ('cool').className = ('cool red');
+   //document.getElementById ('cool').className = ('cool red');
 }
 var sayMyName = function (name) {
     alert('My name is: '+name);

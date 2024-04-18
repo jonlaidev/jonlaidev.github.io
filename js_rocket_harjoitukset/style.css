@@ -6,11 +6,13 @@ h1 {
     text-align: center;
 }
 .cool {
+    visibility: hidden;
     width: 100px;
     height: 100px;
     background-color: green;
     transition: background-color 1s;
 }
 .cool.red{
+    visibility: visible;
     background-color: red;
 }
