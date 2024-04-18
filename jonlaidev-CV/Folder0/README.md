@@ -1,2 +1,0 @@
-# CV
-jonlaidev-cv

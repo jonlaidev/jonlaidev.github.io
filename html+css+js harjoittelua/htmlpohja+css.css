@@ -1,0 +1,76 @@
+/*juuri väreille*/
+:root {--just-white: white;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    background-color: lightslategray;
+}
+body:after{
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+content: url(../img/OIP1.1.png)
+}
+/*otsikko*/
+h1{
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    background-color: lightblue;
+}
+/*kuva*/
+.image{
+    width: 474px;
+    height: 334px;
+    margin-left: 500px;
+    margin-bottom: 50px;
+    background-image: url(../img/OIP1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*hiiren hover toiminto*/
+.image:hover{
+    background-image: url(../img/OIP1.1.png);
+}
+/*some ja s-posti linkit*/
+.linkit{
+    color: var(--just-white);
+    text-align: right;
+    text-decoration: underline;
+    font: 2em sans-serif;
+    margin-right: 50px;
+}
+/*lorem...*/
+p{
+font: 1em sans-serif;
+padding: 1rem;
+color: var(--just-white);
+border-style: dashed;
+border-width: 5px;
+border-top-color: lightseagreen;
+border-bottom-color: lightcoral;
+border-left-color: white;
+border-right-color: white;
+}
+/*animaatio linkki*/
+.a{
+    padding-left: 40%;
+    font-size: x-large;
+    text-decoration: underline;
+    color:blue;
+}
+/*alaotsikko*/
+footer{
+    height:200px;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: underline;
+    background-color: var(--just-white);
+    background-attachment: scroll;
+    font: 10em sans-serif;
+}

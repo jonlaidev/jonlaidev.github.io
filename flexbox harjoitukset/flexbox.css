@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+}
+.header-main1{
+    width: 2000px;
+    height: 500px;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /*justify content ->space evenly*/
+    align-content: normal;
+    /*aling-contet->strech*/
+    gap: 50px 40px;
+}
+.header-main1 div{
+    height: 60px;
+}
+.header-main1 .flexbox1{
+    width: 400px;
+    background-color: aqua;
+    order: 1;
+}
+.header-main1 .flexbox2{
+    width: 400px;
+    background-color: orange;
+    order: 2;
+    flex-grow: 1;
+}
+.header-main1 .flexbox3{
+    width: 400px;
+    background-color: white;
+    order: calc(1 2 3);
+    flex-grow: 2;
+    
+}
+h1{
+    font-family: cursive, sans-serif;
+    font-size: xx-large;
+    color: white;
+}
