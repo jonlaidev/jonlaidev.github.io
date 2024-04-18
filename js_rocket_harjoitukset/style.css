@@ -9,7 +9,7 @@ h1 {
     width: 100px;
     height: 100px;
     background-color: green;
-    transition: backround-color 1s;
+    transition: background-color 1s;
 }
 .cool.red{
     background-color: red;

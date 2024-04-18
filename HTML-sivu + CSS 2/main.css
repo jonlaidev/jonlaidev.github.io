@@ -1,0 +1,97 @@
+  /* reuna, pyöristys, marginaali, värit */
+h1{
+    margin-left: 1%;
+    border: 2px solid;
+    color: black; 
+    width:7em;
+    border-radius: 0px 15px 15px 0px;
+    background: black;
+    -webkit-text-fill-color: white;
+    text-shadow: 3px 4px 4px red;
+}
+/*taustaväri, koko, fontti-perhe, fontti-koko ja marginaali*/
+body{
+    font-family:  "Audiowide", sans-serif;
+    font-size:large;
+    font-weight: bold;
+
+    background:gray;
+    margin: 10px;
+    padding: 0px;
+        width: 99%;
+        height: 100%;
+}
+/* id ja väliä */
+#nav{
+border: 2px dotted;
+color: rgb(255, 255, 255);
+background-color: black;
+text-align: center;
+
+}
+.BOX1{
+color:orange;
+position: absolute;
+    left: 1em;
+    top:225px;
+    border: double;
+    width: 115px;
+} 
+.BOX2 {
+    color: orange;
+    position: absolute;
+    top: 225px;
+    left: 150px;
+    border: double;
+    width: 150px;
+}
+.linkki1{
+    color: black;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.linkki2{
+    color:white;
+}
+label{
+    color: white;
+}
+h2{
+color:white;
+}
+h3{
+    color:red
+}
+h4{
+    color:white
+}
+h5{
+    color:red
+}
+h6{
+    color:white
+}
+p{
+    color: orange;
+}
+ul{
+    -webkit-text-fill-color: white;
+}
+footer{
+    
+    text-align: center;
+    color: black; 
+    background: whitesmoke;
+    margin-left: 0,5%;
+    margin-right: 0,5%;
+    margin-bottom: 10%;
+    background-attachment: fixed;
+    width: 99%;
+    height: 200px;
+}
+  /* /luokka,cc,väri */
+.Copyrights{
+    color:red
+    }

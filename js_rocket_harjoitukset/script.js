@@ -1,6 +1,18 @@
 console.log('log0');
 //Seuraava harjoitus
+//this function does this
+var doCoolStuff = function () {
+   var currentClassName = document.getElementById ('cool').className;
+//jos olemassa oleva class ei ole cool tee siitä cool
+   if (currentClassName == 'cool') {
+    document.getElementById ('cool').className = ('cool red');
+   } else {
+    document.getElementById ('cool').className = ('cool');
+   }
 
+   //changing class name
+   document.getElementById ('cool').className = ('cool red');
+}
 var sayMyName = function (name) {
     alert('My name is: '+name);
 }
