@@ -24,7 +24,7 @@ ul {
     background-color: black;
 }
 /*lista muotoilu*/
-.li1, .li2, .li3, .li4 {
+.li1, .li2, .li3, .li4, .li5, .li6 {
     padding: 0.5em;
     background-color: grey;
     color: var(--special_red);
