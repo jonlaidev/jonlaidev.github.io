@@ -32,7 +32,7 @@ h1{
     background-repeat: no-repeat;
     background-position: center;
 }
-/*hiiren hover toiminto*/
+/*hiiren hover toiminto...KORJAA!!!*/
 .image:hover{
     background-image: url(OIP1.1.png);
 }
