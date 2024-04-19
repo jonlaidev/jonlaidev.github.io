@@ -3,7 +3,7 @@
 }
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    background-color: lightslategray;
+    background-color: rgb(112, 112, 112);
 }
 body:after{
     position: absolute;
@@ -11,7 +11,7 @@ body:after{
     height: 0;
     overflow: hidden;
     z-index: -1;
-content: url(../img/OIP1.1.png)
+    content: url(OIP1.1.png)
 }
 /*otsikko*/
 h1{
@@ -27,30 +27,31 @@ h1{
     height: 334px;
     margin-left: 500px;
     margin-bottom: 50px;
-    background-image: url(../img/OIP1.png);
+    background-image: url(OIP1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 /*hiiren hover toiminto*/
 .image:hover{
-    background-image: url(../img/OIP1.1.png);
+    background-image: url(OIP1.1.png);
 }
 /*some ja s-posti linkit*/
 .linkit{
     color: var(--just-white);
-    text-align: right;
+    text-align: none;
     text-decoration: underline;
     font: 2em sans-serif;
-    margin-right: 50px;
+    margin-left: 100px;
 }
+
 /*lorem...*/
 p{
 font: 1em sans-serif;
 padding: 1rem;
 color: var(--just-white);
 border-style: dashed;
-border-width: 5px;
+border-width: 400px;
 border-top-color: lightseagreen;
 border-bottom-color: lightcoral;
 border-left-color: white;
@@ -58,8 +59,8 @@ border-right-color: white;
 }
 /*animaatio linkki*/
 .a{
-    padding-left: 40%;
-    font-size: x-large;
+    padding-left: 30%;
+    font-size: 25px;
     text-decoration: underline;
     color:blue;
 }
