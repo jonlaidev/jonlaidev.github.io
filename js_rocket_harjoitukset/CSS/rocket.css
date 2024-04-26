@@ -22,16 +22,21 @@ left: 0;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 20px;
+    height: 40px;
 }
 
 .rocket {
     position: absolute;
     left: 50%;
-    bottom: 20px;
-    width: 20px;
+    bottom: 50px;
+    width: 50px;
     height: 100px;
     background-color: red;
+    transition: bottom 2000ms;
+}
+
+.rocket.flying {
+    bottom: 1000px;
 }
 
 a{
