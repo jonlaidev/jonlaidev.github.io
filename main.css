@@ -16,6 +16,9 @@ h1 {
 }
 h2 {
     color:var(--special_red);
+    text-align: center;
+    background-color: snow;
+    text-shadow: 2px 2px 2px black;
 }
 /*kokolistan moutoilu tässä*/
 ul {
