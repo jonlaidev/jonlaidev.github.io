@@ -16,12 +16,14 @@ var changeState = function (state) {
 
         var succes = setTimeout(function () {
             var randomNumber = Math.round (Math.random()*10);
-            //well_done
+
+            console.log('randomNumber:'+ randomNumber)
+            //succes
             if (randomNumber > 5) {
             changeState (4);
             } else {
                 changeState (5); 
-                //ohno!
+            //ohno!
             }
         }, 2000);
     };
