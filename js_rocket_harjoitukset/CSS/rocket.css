@@ -40,11 +40,11 @@ left: 0;
     width: 50px;
     height: 100px;
     background-color: red;
-    transition: bottom 2000ms;
+    transition: bottom 10000ms;
 }
 
 body.body-state3 .rocket {
-    bottom: 1000px;
+    bottom: 2000px;
 }
 
 a{
@@ -65,15 +65,15 @@ font-size: x-large;
     display: none;
 }
 
-body.body-state1 .state1 {display: block;}
+body.body-state1 .state1{display: block;}
 
-body.body-state2 .state2 {display: block;}
+body.body-state2 .state2{display: block;}
 
-body.body-state3 .state3 {display: block;}
+body.body-state3 .state3{display: block;}
 
-body.body-state4 .state4 {display: block;}
+body.body-state4 .state4{display: block;}
 
-body.body-state5 .state5 {display: block;}
+body.body-state5 .state5{display: block;}
 
 
 
