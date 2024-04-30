@@ -1,3 +1,5 @@
+/*ruutu_vasen*/
+
 .left {
 background-color: lightgray;
 position: fixed;
@@ -6,6 +8,8 @@ height: 100%;
 top:0;
 left: 0;
 }
+
+/*ruutu_oikea*/
 
 .right{
     background-color: black;
@@ -16,6 +20,8 @@ left: 0;
     right: 0;
 }
 
+/*maa*/
+
 .ground {
     background-color: darkgreen;
     position: absolute;
@@ -24,6 +30,8 @@ left: 0;
     width: 100%;
     height: 40px;
 }
+
+/*raketti*/
 
 .rocket {
     position: absolute;
@@ -46,3 +54,22 @@ a{
 a.button{
 
 }
+/*vaiheet*/
+
+.state1, 
+.state2, 
+.state3, 
+.state4, 
+.state5{
+    display: none;
+}
+
+body.body-state1 .state1 {display: block;}
+
+body.body-state2 .state2 {display: block;}
+
+body.body-state3 .state3 {display: block;}
+
+body.body-state4 .state4 {display: block;}
+
+body.body-state5 .state5 {display: block;}
