@@ -43,16 +43,17 @@ left: 0;
     transition: bottom 2000ms;
 }
 
-.rocket.flying {
+body.body-state3 .rocket {
     bottom: 1000px;
 }
 
 a{
-
+color: aqua;
 }
 
 a.button{
-
+color: black;
+font-size: x-large;
 }
 /*vaiheet*/
 
@@ -73,3 +74,10 @@ body.body-state3 .state3 {display: block;}
 body.body-state4 .state4 {display: block;}
 
 body.body-state5 .state5 {display: block;}
+
+
+
+h1 {
+    text-align: center;
+    color: orange;
+}
