@@ -5,12 +5,14 @@ var changeState = function (state) {
     document.body.className = 'body-state' + state
     clearInterval(timer);
     countdownNumber = 10;
-    
+    console.log('countdownNumber' + countdownNumber)
+
+    document.getElementById('countdown').innerHTML = countdownNumber;
     //countdown
     if (state == 2) {
         timer = setInterval (function () {
-            document.getElementById('countdown').innerHTML = countdownNumber;
             countdownNumber = countdownNumber -1;
+            document.getElementById('countdown').innerHTML = countdownNumber;
         if (countdownNumber <=0) {
             changeState(3);
         }
