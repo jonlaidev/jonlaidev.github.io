@@ -7,9 +7,15 @@ body {
     font-family:Arial, Helvetica, sans-serif;
     background-color: rgb(222, 222, 222);
 }
-/*otsikko*/
+/*otsikko 1&2*/
 h1 {
     color: var(--special_red);
+    text-align: center;
+    background-color: snow;
+    text-shadow: 2px 2px 2px black;
+}
+h2 {
+    color:var(--special_red);
     text-align: center;
     background-color: snow;
     text-shadow: 2px 2px 2px black;
