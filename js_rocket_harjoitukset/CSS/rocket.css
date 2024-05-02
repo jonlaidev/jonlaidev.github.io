@@ -1,3 +1,24 @@
+/*root_colors*/
+
+:root {
+    --white: snow;
+}
+
+/*full_body*/
+
+body {
+    font-family: sans-serif;
+    font-size: xx-large;
+
+}
+
+/*heading_styling*/
+
+h1 {
+    text-align: center;
+    color: darkred;
+    text-transform: uppercase;
+}
 
 /*screen_left*/
 
@@ -45,6 +66,9 @@ left: 0;
     background-size: contain;
     transition: bottom 10000ms;
 }
+
+/*img_section*/
+
 body.body-state1 .rocket {
     background: url('../img/rocket.jpg') no-repeat;
     transition: none;
@@ -58,18 +82,34 @@ body.body-state3 .rocket, body.body-state4 .rocket {
     bottom: 2000px;
 }
 body.body-state5 .rocket {
-    background-image: url('../img/boom.png');
+    background-image: url('../img/boom.jpg');
     transition: none;
 }
+
+/*button_styling_and_hover*/
 
 a{
 color: blue;
 }
 
 a.button{
-color: orangered;
-font-size: x-large;
+    display: block;
+    position: center;
+    text-align: center;
+    margin: 10em;
+    padding: 30px 50px;
+    border-radius: 10px;
+    background-color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: orangered;
+    font-size: x-large;
 }
+
+a:hover {
+background-color: var(--white)
+}
+
 /*states*/
 
 .state1, 
@@ -79,6 +119,8 @@ font-size: x-large;
 .state5{
     display: none;
 }
+
+/*body_states*/
 
 body.body-state1 .state1{display: block;}
 
@@ -90,9 +132,3 @@ body.body-state4 .state4{display: block;}
 
 body.body-state5 .state5{display: block;}
 
-
-
-h1 {
-    text-align: center;
-    color: darkred;
-}
