@@ -1,4 +1,4 @@
-/*ruutu_vasen*/
+/*screen_left*/
 
 .left {
 background-color: lightgray;
@@ -9,7 +9,7 @@ top:0;
 left: 0;
 }
 
-/*ruutu_oikea*/
+/*screen_right*/
 
 .right{
     background-color: black;
@@ -20,7 +20,7 @@ left: 0;
     right: 0;
 }
 
-/*maa*/
+/*earth*/
 
 .ground {
     background-color: darkgreen;
@@ -28,10 +28,10 @@ left: 0;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 40px;
+    height: 50px;
 }
 
-/*raketti*/
+/*rocket*/
 
 .rocket {
     position: absolute;
@@ -50,14 +50,14 @@ body.body-state3 .rocket, body.body-state4 .rocket {
 }
 
 a{
-color: aqua;
+color: blue;
 }
 
 a.button{
-color: black;
+color: orangered;
 font-size: x-large;
 }
-/*vaiheet*/
+/*states*/
 
 .state1, 
 .state2, 
@@ -81,5 +81,5 @@ body.body-state5 .state5{display: block;}
 
 h1 {
     text-align: center;
-    color: orange;
+    color: darkred;
 }
