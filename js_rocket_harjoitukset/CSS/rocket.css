@@ -1,9 +1,3 @@
-/*full_body*/
-
-
-body {
-    background-image: var('../img/bg.jpg');
-}
 
 /*screen_left*/
 
@@ -41,18 +35,13 @@ left: 0;
 /*rocket*/
 
 .rocket {
-<<<<<<< HEAD
-    position: sticky;
-=======
     position: x, y = 0;
->>>>>>> 85db6cf0170e7ed67c1b229de8c7702deca4113b
     left: 20%;
     margin-left: 0%;
     bottom: 50px;
     width: 1080px;
     height: 1080px;
     background: url('../img/rocket.jpg');
-    
     transition: bottom 10000ms;
 }
 body.body-state1 .rocket {
