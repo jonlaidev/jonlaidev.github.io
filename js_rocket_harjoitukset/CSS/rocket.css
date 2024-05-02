@@ -1,7 +1,12 @@
 /*root_colors*/
 
 :root {
-    --white: snow;
+    --s: snow;
+    --dr: darkred;
+    --or: orangered;
+    --lg:lightgray;
+    --b: black;
+    --dg: darkgreen;
 }
 
 /*full_body*/
@@ -16,14 +21,14 @@ body {
 
 h1 {
     text-align: center;
-    color: darkred;
+    color: var(--dr);
     text-transform: uppercase;
 }
 
 /*screen_left*/
 
 .left {
-background-color: lightgray;
+background-color: var(--lg);
 position: fixed;
 width: 50%;
 height: 100%;
@@ -34,7 +39,7 @@ left: 0;
 /*screen_right*/
 
 .right{
-    background-color: black;
+    background-color: var(--b);
     position: fixed;
     width: 50%;
     height: 100%;
@@ -45,7 +50,7 @@ left: 0;
 /*earth*/
 
 .ground {
-    background-color: darkgreen;
+    background-color: var(--dg);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -89,7 +94,7 @@ body.body-state5 .rocket {
 /*button_styling_and_hover*/
 
 a{
-color: blue;
+color: none;
 }
 
 a.button{
@@ -102,12 +107,12 @@ a.button{
     background-color: black;
     text-decoration: none;
     text-transform: uppercase;
-    color: orangered;
+    color: var(--or);
     font-size: x-large;
 }
 
 a:hover {
-background-color: var(--white)
+background-color: var(--s);
 }
 
 /*states*/

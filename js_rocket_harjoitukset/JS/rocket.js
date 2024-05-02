@@ -1,6 +1,6 @@
 var timer = null;
 var countdownNumber = 10;
-//state_timer_from_html
+    //state_timer_from_html
 var changeState = function (state) {
     document.body.className = 'body-state' + state
     clearInterval(timer);
