@@ -57,10 +57,11 @@ left: 0;
     height: 50px;
 }
 
-/*rocket*/
+/*rocket_and_flying_style_position*/
 
 .rocket {
     position: x, y = 0;
+    /*position: absolute;*/
     left: 20%;
     margin-left: 0%;
     bottom: 50px;
