@@ -1,22 +1,44 @@
+/*fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+
+
 /*erikoisvärin juuri*/
 :root {
-    --special_red:  rgb(222, 69, 69);
+    --normal_green: green;
+    --special_green: rgb(9, 255, 0);
+    --normal_white: snow;
+    --normal_grey: grey;
+    --special_white: rgba(255, 250, 250, 0.815);
+    --special_black: rgba(0, 0, 0, 0.822);
 }
 
 body {
     font-family:Arial, Helvetica, sans-serif;
-    background-color: grey;
+    background-image: url("jld_bg.avif");
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 /*otsikko 1&2*/
 h1 {
-    color: var(--special_red);
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 2.5vw;
+    color: var(--special_green);
     text-align: center;
-    background-color: snow;
+    background-color: var(--special_white);
+    background-blend-mode: color-burn;
     text-shadow: 2px 2px 2px black;
     border-radius: 5px;
+    width: 85%;
+    padding: 0.5em;
+    align-items: center;
+
 }
 /*h2 {
-    color:var(--special_red);
+    color:var(--special_green);
     text-align: center;
     background-color: snow;
     text-shadow: 2px 2px 2px black;
@@ -26,19 +48,22 @@ h1 {
 /*kokolistan moutoilu tässä*/
 ul {
     list-style-type: circle;
-    border: solid;
+    border-radius: 5px;
     font-size: 1.5em;
-    border: solid;
-    border-color: snow;
-    background-color: black;
+    background-color: var(--special_black);
+    width: 85%;
+    padding: 1.5em;
+    margin: 25px;
 }
 /*lista muotoilu*/
 .li1, .li2, .li3, .li4, .li5, .li6, .li7, .li8, .li9, .li10 {
     margin-top: 1.5em;
     padding: 0.5em;
-    background-color: grey;
-    color: var(--special_red);
-    text-shadow: 0.5px 0.5px 0.5px snow;
+    background-color: var(--normal_grey);
+    color: var(--special_white);
+    text-shadow: 0.5px 0.5px 0.5px var(--normal_white);
+    border-radius: 5px;
+
 }
 
 a {
@@ -47,5 +72,5 @@ a {
 }
 /*hiiren liikkeeseen reagointi*/
 a:hover {
-    color: snow;
+    color: var(--special_green);
 }
