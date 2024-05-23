@@ -5,7 +5,7 @@
 
 body {
     font-family:Arial, Helvetica, sans-serif;
-    background-color: rgb(222, 222, 222);
+    background-color: grey;
 }
 /*otsikko 1&2*/
 h1 {
@@ -13,28 +13,32 @@ h1 {
     text-align: center;
     background-color: snow;
     text-shadow: 2px 2px 2px black;
+    border-radius: 5px;
 }
-h2 {
+/*h2 {
     color:var(--special_red);
     text-align: center;
     background-color: snow;
     text-shadow: 2px 2px 2px black;
-}
+    border-radius: 5px;
+}*/
+
 /*kokolistan moutoilu tässä*/
 ul {
     list-style-type: circle;
     border: solid;
-    font-size: x-large;
+    font-size: 1.5em;
     border: solid;
     border-color: snow;
     background-color: black;
 }
 /*lista muotoilu*/
-.li1, .li2, .li3, .li4, .li5, .li6 {
+.li1, .li2, .li3, .li4, .li5, .li6, .li7, .li8, .li9, .li10 {
+    margin-top: 1.5em;
     padding: 0.5em;
     background-color: grey;
     color: var(--special_red);
-    text-shadow: 1px 1px 1px snow;
+    text-shadow: 0.5px 0.5px 0.5px snow;
 }
 
 a {
