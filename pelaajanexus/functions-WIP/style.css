@@ -1,0 +1,119 @@
+* {
+    font-family: 'Courier New', Courier, monospace
+    
+}
+
+body {
+    background-color: black;
+    margin: 0px;
+    height: 100vh;
+    
+    color: white;
+
+}
+
+.mid-container {
+    background-color: rgba(0, 255, 0, 0.3);
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    
+    
+}
+
+.textright {
+    background-color: rgba(0, 0, 255, 0.5);
+    margin: 5% 15%;
+    font-size: 3vmin;
+}
+.card-group {
+    background-color: rgba(255, 0, 0, 0.5);
+    aspect-ratio: 2 / 3;
+    width: 20vmin;
+    margin-top: 10vmin;
+    margin-left: 5vmin;
+    margin-right: 5vmin;
+}
+
+.sidebar {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 30vmin;
+}
+
+.card-big {
+    aspect-ratio: 2 / 3;
+    width: 20vmin;
+}
+.card-big {
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    border-radius: 1.2vmin;
+    transition: transform 200ms cubic-bezier(.69,.31,.9,.37), visibility 240ms;
+}
+/* ENSIMMÄINEN RAKENNE */
+.card-big:nth-child(2){
+    transform: translateX(-8%) translateY(-6%);
+    background-image: url("https://plus.unsplash.com/premium_photo-1701210419479-e6b2e6038456?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: contain;
+    visibility: hidden;
+}
+.card-big:nth-child(3){   
+    transform: translateX(4%)translateY(-3%);
+    background-image: url("https://plus.unsplash.com/premium_photo-1701210419479-e6b2e6038456?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: contain;
+    visibility: hidden;
+}
+.card-big:nth-child(4){
+    background-image: url("https://plus.unsplash.com/premium_photo-1701210419479-e6b2e6038456?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: contain;
+    visibility: hidden;
+    transform: translateX(-6%)translateY(4%);
+}
+.card-big:nth-child(5){
+    background-image: url("https://plus.unsplash.com/premium_photo-1701210419479-e6b2e6038456?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: contain;
+    visibility: hidden;
+    background-color: rgba(0, 0, 255, 0.5);
+}
+/* 
+.card-group:hover > .card-big:nth-child(2) {
+    transform: translateX(120%)translateY(0%)rotate(0deg)scaleY(100%);
+    visibility: visible;
+}
+.card-group:hover > .card-big:nth-child(3) {
+    transform: translateX(360%)translateY(0%)rotate(-0deg)scaleY(100%);
+    visibility: visible;
+}
+.card-group:hover > .card-big:nth-child(4) {
+    transform: translateX(240%)translateY(0%)rotate(0deg)scaleY(100%);
+    visibility: visible;
+}
+.card-group:hover > .card-big:nth-child(5) {
+    transform: translateX(480%)translateY(0%)rotate(-0deg)scaleY(100%);
+    visibility: visible;
+} */
+
+
+/* testi */
+.card-group:hover > .card-big:nth-child(2) {
+    transform: translateX(120%)translateY(0%)rotate(0deg)scaleY(100%);
+    visibility: visible;
+}
+.card-group:hover > .card-big:nth-child(3) {
+    transform: translateX(360%)translateY(0%)rotate(-0deg)scaleY(100%);
+    visibility: visible;
+}
+.card-group:hover > .card-big:nth-child(4) {
+    transform: translateX(240%)translateY(0%)rotate(0deg)scaleY(100%);
+    visibility: visible;
+}
+.card-group:hover > .card-big:nth-child(5) {
+    transform: translateX(480%)translateY(0%)rotate(-0deg)scaleY(100%);
+    visibility: visible;
+}
+.card-group:hover {
+    position: relative;
+    height: 30vmin;
+    width: 120vmin;
+}

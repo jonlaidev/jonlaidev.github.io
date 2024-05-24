@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    
+    }
+    .modal_open_button {
+    position: relative;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: none;
+    border: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: fit-content;
+    overflow: hidden;
+}
+ 
+/*.modal_open_button span {
+    position: absolute;
+    inset: 5px;
+    border-radius: 5px;
+    background: var(--background);
+    z-index: 1;
+}*/
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+ 
+.modal {
+    box-sizing: border-box;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary);
+    padding: 20px;
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    color: var(--text);
+    z-index: 1000;
+    text-align: center;
+ 
+}
+ 
+.overlay {
+ 
+    display: none;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.8);
+    z-index: 999;
+   
+}
+ 
+.close_button {
+ 
+    background-color: var(--accent);
+    border: none;
+    border-radius: 5px;
+    color: var(--text);
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+ 
+}
+.container {
+    display: grid;
+    place-items: left;
+
+}
+#bg1{
+    background-color: purple;
+    width: 400px;
+    aspect-ratio: 1;
+    position: absolute
+}
+#button {
+    background-color: green;
+    width: 380px;
+    margin-left: 10px;
+    margin-top: 10px;
+    aspect-ratio: 1;
+    position: absolute;
+    cursor:pointer;
+}
+/* modal_styles
+<!--modal_js_window_ends-->*/
+</style>
+<body>
+    
+    <!--modal_js_window_starts-->
+    <div class="overlay" id="overlay"></div>
+    <div class="modal" id="modal">
+        <h2>Tervetuloa tietoa meistä osioon!</h2>
+        <p>Tämän sivuston ovat suunnitelleet ja toteuttaneet tiimimme jäsenet Joni, Leevi ja Patrik. <br>
+        Olemme yhdistäneet taitomme tarjotaksemme sinulle parhaan pelikokemuksen ja ajantasaisimmat arvostelut. <br>
+        <br>
+        <span>Hyppää mukaan ja nauti pelaamisesta kanssamme!</span></p>
+        <button class="close_button" id="close">Sulje</button>
+    </div>
+<div class="modal_open_button">
+    <span></span>
+<button id="openModal">
+    Tietoa meistä</button>
+</div>
+<!--modal_js_window_ends-->
+
+<div class="container">
+    <div id="bg1">
+
+    </div>
+    <div id="button" onclick="">
+        
+    </div>
+
+</div>
+</body>
+<script src="animated-button.js"></script>
+</html>
