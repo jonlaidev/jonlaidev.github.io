@@ -1,16 +1,19 @@
+//wpm=words_per_min
+
 const typingText = document.querySelector(".typing-text p"),
 inpField = document.querySelector(".wrapper .input-field"),
 tryAgainBtn = document.querySelector(".content button"),
 timeTag = document.querySelector(".time span b"),
 mistakeTag = document.querySelector(".mistake span"),
-wpmTag = document.querySelector(".wpm span"),
-cpmTag = document.querySelector(".cpm span");
+wpmTag = document.querySelector(".wpm span");
 
+//timer_set
 let timer,
 maxTime = 60,
 timeLeft = maxTime,
 charIndex = mistakes = isTyping = 0;
 
+//paragraph_section
 function loadParagraph() {
     const ranIndex = Math.floor(Math.random() * paragraphs.length);
     typingText.innerHTML = "";
@@ -23,6 +26,7 @@ function loadParagraph() {
     typingText.addEventListener("click", () => inpField.focus());
 }
 
+//type_section
 function initTyping() {
     let characters = typingText.querySelectorAll("span");
     let typedChar = inpField.value.split("")[charIndex];
@@ -51,12 +55,12 @@ function initTyping() {
         characters.forEach(span => span.classList.remove("active"));
         characters[charIndex].classList.add("active");
 
+        //timer_calculate
         let wpm = Math.round(((charIndex - mistakes)  / 5) / (maxTime - timeLeft) * 60);
         wpm = wpm < 0 || !wpm || wpm === Infinity ? 0 : wpm;
         
         wpmTag.innerText = wpm;
         mistakeTag.innerText = mistakes;
-        cpmTag.innerText = charIndex - mistakes;
     } else {
         clearInterval(timer);
         inpField.value = "";
@@ -73,7 +77,7 @@ function initTimer() {
         clearInterval(timer);
     }
 }
-
+//reset
 function resetGame() {
     loadParagraph();
     clearInterval(timer);
@@ -83,9 +87,8 @@ function resetGame() {
     timeTag.innerText = timeLeft;
     wpmTag.innerText = 0;
     mistakeTag.innerText = 0;
-    cpmTag.innerText = 0;
 }
-
+//reset_button
 loadParagraph();
 inpField.addEventListener("input", initTyping);
 tryAgainBtn.addEventListener("click", resetGame);

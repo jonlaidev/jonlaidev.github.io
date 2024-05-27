@@ -1,10 +1,9 @@
-/* Import Google Font - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 body{
   display: flex;
@@ -12,18 +11,21 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #17A2B8;
+  background: #ffffff;
 }
 ::selection{
   color: #fff;
-  background: #17A2B8;
+  background: #878787;
+}
+.logo {
+  border-image-outset: 10px;
 }
 .wrapper{
   width: 770px;
   padding: 35px;
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+  border-radius: none;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.247);
 }
 .wrapper .input-field{
   opacity: 0;
@@ -52,16 +54,16 @@ body{
   position: relative;
 }
 .typing-text p span.correct{
-  color: #56964f;
+  color: #45933d;
 }
 .typing-text p span.incorrect{
-  color: #cb3439;
+  color: #ce1a20;
   outline: 1px solid #fff;
   background: #ffc0cb;
   border-radius: 4px;
 }
 .typing-text p span.active{
-  color: #17A2B8;
+  color: #ffd272;
 }
 .typing-text p span.active::before{
   position: absolute;
@@ -72,7 +74,7 @@ body{
   left: 0;
   opacity: 0;
   border-radius: 5px;
-  background: #17A2B8;
+  background: #b91010;
   animation: blink 1s ease-in-out infinite;
 }
 @keyframes blink{
@@ -98,7 +100,7 @@ body{
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  background: #17A2B8;
+  background: #b91010;
   transition: transform 0.3s ease;
 }
 .content button:active{
@@ -181,4 +183,17 @@ li:not(:first-child) span{
   .content button{
     margin-top: 10px;
   }
+}
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  background: #3333339a;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.row {
+  margin: 0px;
 }
