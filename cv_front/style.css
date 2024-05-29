@@ -1,14 +1,14 @@
 @import url(https://weloveiconfonts.com/api/?family=entypo|fontawesome);
-/* entypo */
+/* ENTYPO */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
 }
-/* fontawesome */
+/* FONTAWESOME */
 [class*="fontawesome-"]:before {
   font-family: 'FontAwesome', sans-serif;
 }
 
-/*root_colors*/
+/*ROOT_COLORS*/
 
 :root {
 	--bg: rgb(2, 2, 2);
@@ -19,7 +19,7 @@
 
 }
 
-/* Utils */
+/* UTILS */
 
 .clear {
 	clear: both;
@@ -100,7 +100,7 @@
 		left: 343px;
 	}
 	
-/* Main tags */
+/* MAIN_TAGS */
 
 body {
 	background-color: var(--bg);
@@ -167,7 +167,7 @@ ul {
 		padding-right: 8px;
 	}
 
-/* Containers size */
+/* CONTAINER_SIZES */
 
 #main_container {
 	width: 960px;
@@ -253,6 +253,8 @@ ul {
 			.download_print_buttons a:hover .icon {
 				color: var(--text);
 			}
+
+/* HEADER_MENU */
 			
 .header_menu {
 	width: 699px;
@@ -273,7 +275,7 @@ ul {
 			color: var(--red);
 		}
 		
-/* LEFT NAV */
+/* LEFT_NAV */
 
 #left_nav h2 {
 	margin: 0;
@@ -418,11 +420,10 @@ ul {
 	margin-top: 20px;
 }
 
-/* Profile Content */
+/* PROFILE_CONTENT */
 
 .profile_quote {
 	position: relative;
-	/* margin-left: 5px; */
 }
 	.profile_quote p {
 		font-size: 17px;
@@ -431,7 +432,7 @@ ul {
 	.profile_quote  .entypo-quote {
 		color: var(--gray);
 		font-size: 80px;
-    font-style: normal;
+    	font-style: normal;
 		position: absolute;
 		top: -20px;
 		right: 70px;
