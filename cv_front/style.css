@@ -368,20 +368,31 @@ ul {
 	margin-top: 15px;
 }
   .get_social_content h2{
-    margin-bottom: 8px;
+    margin-bottom: 15px;
   }
-	.social_icons {
-		margin-left: -8px;
-	}
+  .social_icons {
+    display: inline-block;
+    margin: 0; 
+	display: flex;
+    flex-direction: column;
+	gap: 10px;
+}
+
 	.social_icons a {
-		font-size: 35px;
+		font-size: 1.1em;
 		text-decoration: none;
 		color: var(--text);
 		padding: 0;
-		padding: 0 5px;
+		padding: 0 20px;
 	}
 		.social_icons a span.invisible {
-			display:none;
+			display:contents;
+		}
+		.social_icons .instagram:hover{
+			background: #E1306C;
+			color: #dfe3ee;
+			border-top-right-radius: 50px;
+			border-bottom-left-radius: 50px;
 		}
 		.social_icons .facebook:hover{
 			background: #3b5998;
