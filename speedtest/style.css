@@ -1,0 +1,48 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* NOLLAUS */
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* RESPONSIIIVINEN_ASETTELU */
+html, body {
+    height: 100%;
+    /*display: flex;*/
+    color: white;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+}
+/* HEADINGS */
+
+h1 {
+    padding-left: 10px;
+}
+.h4 {
+    padding: 2em;
+    text-align: center;
+    color: red;
+    font-size: 5em;
+}
+
+/* LIST */
+
+ul, li {
+padding: 2em;
+}
+
+/* PARAGRAPH */
+
+
+p {
+    text-align: center;
+}
+
+img {
+    align: center ;
+    width:500px;
+    height:500px;
+}
