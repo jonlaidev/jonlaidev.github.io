@@ -1,3 +1,14 @@
+#Tehtävä 6(RATKAISTU): Tässä on paksu portaikko, jossa on 3 askelmaa:
+###
+# #
+#####
+# # #
+#######
+# # # #
+#######
+#Tee ohjelma, joka tulostaa silmukan avulla vastaavan portaikon, jossa on 30 askelmaa.
+
+#AI-testi_vastaus
 def drawStaircase(n):
     for i in range(3, n + 1):
         if i % 2 == 1:
@@ -17,7 +28,7 @@ def drawStaircase(n):
 
 drawStaircase(30)
 
-#oikea vastaus
+#AI-oikea_vastaus
 def drawStaircase(n):
     second_last_line = ""  # Muuttuja toiseksi viimeiselle riville
     last_line = ""  # Muuttuja viimeiselle riville
