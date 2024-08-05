@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- main_css -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- icon_from_jld_index-->
+    <link rel="icon" type="image/jpg" href="../jonlaidev(LOGO).jpg"/>
+    <!-- google_fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>ʜᴀʀᴊᴏɪᴛᴛᴇʟᴜ ᴘᴀɪᴠᴀᴋɪʀᴊᴀ</title>
+  </head>
+  <body>
+    <header><h1 class="title">Harjoittelu päiväkirja</h1></header>
+
+    <!-- journal_entry -->
+    <section class="section journal-section">
+      <div class="container">
+        <div class="container-row container-row-journal">
+          <div class="container-item container-item-journal">
+            <form id="entryForm" action="">
+              <label for="entry-title" class="journal-label">Otsikko:</label>
+              <input
+                type="text"
+                name="entry-title"
+                id="entry-title"
+                class="entry-text-title"
+                placeholder="Nimeä otsikko"
+              />
+              <label for="entry" class="journal-label">Päiväkirjan teksti:</label>
+              <textarea
+                name="daily-entry"
+                id="entry"
+                class="entry-text-box"
+                placeholder="Mitä tänään on tapahtunut?"
+              ></textarea>
+              <button class="btn-main entry-submit-btn" type="submit">Lähetä!</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- journal_entry_results -->
+    <section class="section sectionEntryResults" id="entryResultsSection">
+      <div class="container">
+        <div class="container-row entryResultRow"></div>
+      </div>
+    </section>
+    <!-- footer_copyright_dynamic_date -->
+    <footer>
+      <div class="row">
+        Copyright © <span id="spanDate"></span> - All rights reserved | JLD™ Coding
+        </div>
+    </footer>
+    <script src="./javascript/main.js"></script>
+    <script src="./javascript/dynamic_date.js"></script>
+  </body>
+</html>
